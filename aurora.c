@@ -126,6 +126,8 @@ setlocale(LC_ALL, "Portuguese"); //definir linguagem
     printf("\t1- * Registrar nomes : \n");
     printf("\t2- * Consultar nomes : \n");
     printf("\t3- * Deletar nomes : \n");
+    printf("\t4- *  Sair do sistema: \n");
+
     printf("opcao::"); // fim do menu
 
  scanf("%d", &opcao); //armazenamento escolha do usuário
@@ -145,6 +147,12 @@ setlocale(LC_ALL, "Portuguese"); //definir linguagem
     case 3:
     deletar();
     break;
+
+    case 4:
+    printf(" Obrigado por utilizar o sistema !!!!\n");
+    return 0;
+    break;
+
 
     default:
     printf("esta opcão não esta disponivel  escolha novamente\n ");
